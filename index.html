@@ -1,7 +1,6 @@
 <!--
-	Name: Golden Garden - Contact Page
-	Description: Contact page of Golden Garden that allows users to request information 
-				 and provide information on business location
+	Name: Golden Garden - Home Page
+	Description: Home page of Golden Garden website that allows navigation to all other pages within the site.
 	Created By: Jennifer Ryan, Deirbhle Touhy and Sunje Alice Winteler.
 	Created On: 04/02/2019
 -->
@@ -14,20 +13,23 @@
 		
 		<!--External Style Links-->
 		<meta charset="utf-8">
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+		
 		<!--CSS Bootstrap-->
 		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
 		
-		<!-- Optional JavaScript -->
+		<!--JavaScript Bootstrap-->
+		<script src="resources/js/bootstrap.min.js"></script>
+		
 		<!-- jQuery first, then Popper.js, then Bootstrap JS-->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		
-		<script src="resources/js/bootstrap.min.js"></script>
+		<!--FontAwesome-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		
 		<!--Customized Style sheet-->
 		<link rel="stylesheet" type="text/css" href="style.css">
-
+	
 </head>
 	<body>
 		<div class="wrapper">
@@ -36,8 +38,9 @@
 				<nav>
 					<ul class="nav nav-tabs">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link active" href="index.html">Home</a>
 						</li>
+						<li class="nav-item dropdown">
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
 							<div class="dropdown-menu">
@@ -52,36 +55,63 @@
 							<a class="nav-link" href="about.html">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="contact.html">Contact Us</a>
+							<a class="nav-link" href="contact.html">Contact Us</a>
 						</li>
 					</ul>
 				</nav>
 			</header>
+				<!--Slide Show-->
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+						<img class="responsive" src="resources/images/Alpine_White.jpg">
+					</div>
+
+					<div class="mySlides fade">
+						<img class="responsive" src="resources/images/Crushed_Plum_Slate.jpg">
+					</div>
+
+					<div class="mySlides fade">
+						<img class="responsive" src="resources/images/Pale_Brown.jpg">
+					 </div>
+					  
+					 <!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  
+				</div>
+					<br>
+					
+					<!-- The dots/circles -->
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
+
 				<!--Content section-->
 				<div class="content">
-					<h2>Contact Us</h2>
-					<form>
-						<div class="form-group">
-							<label for="usr">Name:</label>
-							<input type="text" class="form-control" id="usr">
-						</div>
-						<div class="form-group">
-							<label for="email">Email address:</label>
-							<input type="email" class="form-control" id="email">
-						</div>
-						<div class="form-group">
-							<label for="comment">Comment:</label>
-							<textarea class="form-control" rows="4" id="comment"></textarea>
-						</div>
-						<div class="form-group"> 
-							<div class="col-sm-offset-2 col-sm-10">
-								<button type="submit" class="btn btn-default">Submit</button>
-							</div>
-						</div>
-					</form>
-					<h2>Location</h2>
-					<p>Find us in Dundrum, Tipperary!</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.6270189936604!2d-8.108914627039498!3d52.54380899634853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485cb125285b1847%3A0xcd434c9fede7896b!2sKilpatrick%2C+Co.+Tipperary%2C+E34+F433!5e0!3m2!1sde!2sie!4v1551819268435" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<section id="products">
+						<h2>Products</h2>
+						<p>Our product section is split into two, we have Sand and Gravel products and Landscaping stones.</p>
+						<article id="sandgravel">
+							<a href="product.html/#sandgravel">
+								<h3>Sand and Gravel</h3>
+								<img src="resources/images/Leitrim_Gold.jpg" width = "500" height = "300">
+							</a>
+							<p>Coming soon: At Golden Garden we have a great variety of sands and gravel products for all purposes.</p>
+						</article>
+						<article id="Landscaping">
+							<a href="product.html/#landscaping">
+								<h3>Landscaping</h3>
+								<img src="resources/images/Cranford_Gold.jpg" width = "500" height = "300">
+							</a>
+							<p>With our Landscaping products you can beautify every garden, field or land.</p>
+						</article>
+					</section>
+					<section id="about">
+						<a href="about.html"><h2>About Us</h2></a>
+						<p>Golden Garden is split into Golden Garden Sand and Gravel and Golden Garden Landscaping products. Our company was founded in 2007 and has grown a lot in landscaping products.</p>
+					</section>
 				</div>
 			<!--Footer contains: -Logo linked to Home Page, address and social media links-->
 			<footer>
@@ -120,7 +150,7 @@
 							</tr>
 						</table>
 					</div>
-				<div class="col-sm-4">
+					<div class="col-sm-4">
 						<h5>Social Media</h5>
 						<p>
 							<i class="fab fa-facebook-square"  href="https://www.facebook.com/goldengardenlandscapeproducts/"> <i class="fas fa-at"></i>Golden Garden</i><br>
@@ -143,5 +173,7 @@
 				</div>
 			</footer>
 		</div>
+		<!--External JavaScript-->
+		<script src="script.js"></script>
 	</body>
 </html>
