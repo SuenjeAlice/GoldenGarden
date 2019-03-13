@@ -4,51 +4,62 @@
 	Created By: Jennifer Ryan, Deirbhle Touhy and Sunje Alice Winteler.
 	Created On: 04/02/2019
 */
-
-.wrapper{
-	width: 1100px;
+body{
 	margin-left: auto;
 	margin-right: auto;
-	font: serif;
+}
+
+.wrapper{
+	width: 100%;
+	padding-left: auto;
+	padding-right: auto;
+	
+	font-family: "Kurale", "Times New Roman", serif;
 	
 }
 
 header{
-	height: 75px;
-	background-color: yellow;
-}
-nav{
-	float: right;
+	width: 100%;
+	height: auto;
+	
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{/*figure out how to override boostrap*/
-	background-color: black;
+
+/*Nav Editing*/
+.navbar-brand h1 {
+	color: yellow;
+}
+.navbar-nav{
+	padding-left: 45%;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: yellow;
+	
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
 	color: yellow;
 }
 
 
-/*Home Page of Content within header and footer*/
-
-
-#products{
-	text-align: center;
+.dropdown-menu{
+	background-color: #212529;
 }
 
-#about{
-	text-align: center;
+.dropdown-item{
+	color: yellow;
 }
+/*End of Nav Editing*/
 
-/*End of Home Page Content within header and footer*/
 
-/*Slideshow Styling*/
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
+/* Slideshow  */
 .slideshow-container {
-  max-width: 1100px;
+  max-height: 600px;
+  width: auto;
   position: relative;
   margin: auto;
+  background-color: grey;
 }
 
 /* Hide the images by default */
@@ -59,55 +70,10 @@ nav{
 /*Responsive Images*/
 .responsive {
   width: 100%;
-  height: auto;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
  
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -121,41 +87,117 @@ nav{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+#dot{							
+	text-align: center;
+}
 
 .active, .dot:hover {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+/*Home Page of Content within header and footer*/
+.contentHome{
+	
+	background-image: url("resources/images/Crushed_Plum_Slate.jpg");
+	background-size: 100%;
+	text-align: center;
 }
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+a:link{
+	color: yellow;
+	text-decoration: none;
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.text-block1{
+  position: relative;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
+.text-block1 h2{
+	color: yellow;
+}
+.text-block2{
+  position: relative;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.text-block3{
+  position: relative;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.text-block4{
+  position: relative;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+/*End of Home Page Content within header and footer*/
 
-/*Content on Contact Page */
+
+
+/*Content on Contact Page*/ 
+
+img{
+	display: block;
+	max-width: 100%;
+}
+.contactImage{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+.contentContact{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+.blur{
+	/* Add the blur effect*/
+	filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.contentContact h1{
+	color: yellow;
+	text-align: center;
+	text-decoration: underline;
+}
+.contactForm h3{
+	color: yellow;
+	text-align: center;
+	margin-top: 10%;
+}
+.contactForm p{
+	color: yellow;
+	text-align: center;
+}
 form{
-	width: 750px;
+	width: 650px;
+	margin-left: 15px;
 }
 label{
 	 font-weight: bold;
 	 font-variant: small-caps;
+	 color: yellow;
 }
 .btn{
 	font-weight: bold;
@@ -164,8 +206,28 @@ label{
 	color: black;
 	border: 3px solid black;
 }
+
+.map{
+	color: yellow;
+	padding-left: 20px;
+	border-left: 3px solid yellow;
+	height: auto;
+	margin-top: 10%;
+	text-align: center;
+}
 /*End of Contact Page Styling*/
 footer{
-	background-color: yellow;
+	color: yellow;
+	background-color: #212529;
+	text-align: center;	
 }
+
+h5{
+	text-decoration: underline;
+}
+
+
+
+
+
 
