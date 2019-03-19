@@ -9,7 +9,7 @@ body{
 	margin-right: auto;
 }
 
-.wrapper{
+.container{
 	width: 100%;
 	padding-left: auto;
 	padding-right: auto;
@@ -18,36 +18,22 @@ body{
 	
 }
 
+
 header{
 	width: 100%;
 	height: auto;
-	
+	background-color: #333;
 }
 
 
 /*Nav Editing*/
-.navbar-brand h1 {
-	color: yellow;
-}
-.navbar-nav{
-	padding-left: 45%;
-}
-.navbar-dark .navbar-nav .nav-link {
-	color: yellow;
-	
-}
-
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
-	color: yellow;
-}
-
 
 .dropdown-menu{
-	background-color: #212529;
+	background-color: #333;
 }
-
 .dropdown-item{
-	color: yellow;
+	background-color: #333;
+	color: #FFFFFF;
 }
 /*End of Nav Editing*/
 
@@ -55,11 +41,13 @@ header{
 
 /* Slideshow  */
 .slideshow-container {
-  max-height: 600px;
-  width: auto;
+  max-height: auto;
+  width: 450px;
   position: relative;
-  margin: auto;
+  margin-left: 5%;
+  margin-top: 2%;
   background-color: grey;
+  overflow: clear;
 }
 
 /* Hide the images by default */
@@ -69,14 +57,14 @@ header{
 
 /*Responsive Images*/
 .responsive {
-  width: 100%;
-  height: 600px;
+  width: 450px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
  
 }
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators 
 .dot {
   cursor: pointer;
   height: 15px;
@@ -88,12 +76,12 @@ header{
   transition: background-color 0.6s ease;
 }
 #dot{							
-	text-align: center;
+	text-align: auto;
 }
 
 .active, .dot:hover {
   background-color: #717171;
-}
+}*/
 
 
 /*Home Page of Content within header and footer*/
@@ -103,19 +91,14 @@ header{
 	background-size: 100%;
 	text-align: center;
 }
-a:link{
-	color: yellow;
+.contentHome p{
+	color: white;
+}
+.contentContact a:link{
+	color: #FFF500;
 	text-decoration: none;
 }
-.text-block1{
-  position: relative;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
+
 .text-block1 h2{
 	color: yellow;
 }
@@ -137,19 +120,22 @@ a:link{
   width: 100%;
   padding: 20px;
 }
-.text-block4{
-  position: relative;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
+
 /*End of Home Page Content within header and footer*/
-
-
-
+/*Product Page*/
+#landscaping h2{
+	text-align: center;
+}
+.card{
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+	background-color: grey;
+	color: white;
+}
+.card h5{
+	color: #FFF500;
+}
 /*Content on Contact Page*/ 
 
 img{
@@ -169,6 +155,12 @@ img{
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+.contentContact h2 {
+	background-color: rgba(0,0,0,0.4);
+}
+
+.contentContact p {
 	background-color: rgba(0,0,0,0.4);
 }
 .blur{
@@ -177,57 +169,141 @@ img{
   -webkit-filter: blur(3px);
 }
 .contentContact h1{
-	color: yellow;
+	color: #FFF500;
 	text-align: center;
 	text-decoration: underline;
 }
-.contactForm h3{
-	color: yellow;
+.contactForm h2{
+	color: #FFF500;
 	text-align: center;
 	margin-top: 10%;
 }
 .contactForm p{
-	color: yellow;
+	color: #FFF500;
 	text-align: center;
 }
 form{
 	width: 650px;
 	margin-left: 15px;
 }
+.form-group label{
+	background-color: rgba(0,0,0,0.4);
+}
 label{
 	 font-weight: bold;
 	 font-variant: small-caps;
-	 color: yellow;
+	 color: #FFF500;
 }
 .btn{
 	font-weight: bold;
 	font-variant: small-caps;
-	background-color: yellow;
+	background-color: #FFF500;
 	color: black;
 	border: 3px solid black;
 }
 
 .map{
-	color: yellow;
+	color: #FFF500;
 	padding-left: 20px;
-	border-left: 3px solid yellow;
+	border-left: 3px solid #FFF500;
 	height: auto;
 	margin-top: 10%;
 	text-align: center;
 }
+
+/*About page styling*/
+.contentAbout{
+	
+	background-image: url("resources/images/Alpine_White.jpg");
+	background-size: 100%;
+	text-align: left;
+}
+.contentAbout{
+	color: #FFF500;
+}
 /*End of Contact Page Styling*/
 footer{
-	color: yellow;
-	background-color: #212529;
+	color: grey;
+	background-color: #333;
 	text-align: center;	
 }
+footer th{
+	text-align: left;	
+}
 
-h5{
-	text-decoration: underline;
+footer h5{
+	color: white;
+}
+/*social icons*/
+.facebook i{
+	color:blue;
+	font-size: 22px;
+}
+.instagram i{
+	color: white;
+	font-size: 22px;
 }
 
 
+/*Media Queries*/
+/*Header*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*Contact Content*/
+
+@media screen and (max-width: 600px) {
+	.contactImage img{
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.contentContact{
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+	.contactForm{
+		display: block;
+		width: 100%;
+	}
+}
+/*Footer*/
+
+@media screen and (max-width: 600px) {
+	.col-sm-3{
+		margin-bottom: 3%;
+	}
+}
 
 
 
