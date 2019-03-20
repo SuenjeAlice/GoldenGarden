@@ -183,7 +183,7 @@ img{
 	text-align: center;
 }
 form{
-	width: 650px;
+	width: 90%;
 	margin-left: 15px;
 }
 .form-group label{
@@ -209,6 +209,11 @@ label{
 	height: auto;
 	margin-top: 10%;
 	text-align: center;
+}
+
+.map iframe{
+	width: 90%;
+	height: 300px;
 }
 
 /*About page styling*/
