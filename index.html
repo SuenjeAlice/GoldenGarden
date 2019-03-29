@@ -33,63 +33,71 @@
 	<body>
 		<div class="wrapper">
 		<header>
-		
-			<nav>
-				<div class="toggle">
-					<i class="fas fa-bars menu" aria-hidden="true"></i>
-				</div>
-				<div class="vidLogo">
-					<a href = "index.html"><video width =  "125" height = "75" autoplay muted loop><source src="resources/videos/animatedLogo.mp4" type = "video/mp4">Your browser does not support the video tag.</video></a>
-				</div>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="product.html#landscaping">Landscaping</a>
-					<li><a href="product.html#sandgravel">Sand & Gravel</a>
-					<li><a href="shop.html">Shop</a>
-					<li><a href="contact.html">Contact Us</a>
-				</ul>
-			</nav>	
+		<!--<a href = "index.html"><video width =  "125" height = "75" autoplay muted loop><source src="resources/videos/animatedLogo.mp4" type = "video/mp4">Your browser does not support the video tag.</video></a>-->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				  <a class="navbar-brand" href="#">Logo</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+					  <li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Products
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						  <a class="dropdown-item" href="product.html#landscaping">Landscaping</a>
+						  <a class="dropdown-item" href="product.html#sandgravel">Sand & Gravel</a>
+						</div>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="shop.html">Shop</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="about.html">About Us</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact Us</a>
+					  </li>
+					</ul>
+				  </div>
+				</nav>	
 		</header>
 			
-		
+			
 			<!--Slide Show-->
-			<div class="row">
-				<div class="col-sm-5">
-					<div class="slideShow">	
-						<div class="slideshow-container">
-							<div class="mySlides">
-								<img class="responsive" src="resources/images/Loading shovel and trailers.jpg">
-							</div>
-
-							<div class="mySlides">
-								<img class="responsive" src="resources/images/Stone put in trailer.jpg">
-							</div>
-
-							<div class="mySlides">
-								<img class="responsive" src="resources/images/Digger.jpg">
-							 </div>
+			
+				<div class="slideShow">	
+					<div class="slideshow-container">
+						<div class="mySlides">
+							<img class="responsive" src="resources/images/Loading shovel and trailers.jpg">
 						</div>
-					</div>
-						<br>
-						
-						<!-- The dots/circles-->
-						<div id="dot">
-						  <span class="dot" onclick="currentSlide(1)"></span> 
-						  <span class="dot" onclick="currentSlide(2)"></span> 
-						  <span class="dot" onclick="currentSlide(3)"></span> 
+
+						<div class="mySlides">
+							<img class="responsive" src="resources/images/Stone put in trailer.jpg">
 						</div>
-					</div>
-					
-				<div class="col-sm-5">
-					<!--Welcome Message-->
-					<div class="welcome">
-						<h2>Welcome!</h2>
-						<p>To Golden Garden where we strive to provide our customers with the best availabe materials to create the garden of their dreams  </p>
+
+						<div class="mySlides">
+							<img class="responsive" src="resources/images/Digger.jpg">
+						 </div>
 					</div>
 				</div>
-		</div>
+					<br>
+					
+					<!-- The dots/circles-->
+					<div id="dot">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
+			
+			
+		
 				<!--Content section-->
-				<div class="contentHome" id="homeP">
+				<div class="contentHome" id="home">
 					<div class="text-block1" id="products">
 						<h2>Products</h2>
 						<p>Our product section is split into two, we have Sand and Gravel products and Landscaping stones.</p>
@@ -102,13 +110,9 @@
 							<p>With our Landscaping products you can beautify every garden, field or land.</p>
 						</div><!--End of landscaping div-->
 					</div><!--End of products div-->
-					
 					<div class="text-block4" id="about">
-						<h2>About Us</h2>
+						<a href="about.html"><h2>About Us</h2></a>
 						<p>Golden Garden is split into Golden Garden Sand and Gravel and Golden Garden Landscaping products. Our company was founded in 2007 and has grown a lot in landscaping products.</p>
-						<p>Our company has been in business since 2007. During the past few years our business has grown in landscaping products.</p>
-						<p>We started by selling our own beech pebble in sizes of 6mm to 20mm and expanded in sourcing stone from all over Ireland, which today gives us one of the most extensive range of products for the Garden & Landscaping business.</p>
-						<p>We supply most of our products in bags from 25kg up to 1ton.</p>
 					</div><!--End of about div-->
 				</div><!--End of content div-->
 
@@ -137,10 +141,10 @@
 						<h5>Social Media</h5>
 						<p>
 							<div class="facebook">
-								<img src="resources/images/facebook_icon.png" class="facebook_icon">
+								<i class="fab fa-facebook-square"  href="https://www.facebook.com/goldengardenlandscapeproducts/"></i><br>
 							</div>
 							<div class="instagram">
-								<img src="resources/images/instagram_icon.png" class="instagram_icon">
+								<i class="fab fa-instagram" href=""></i>
 							</div>
 						</p>
 					</div>
@@ -159,6 +163,6 @@
 			</footer>
 		</div>
 		<!--External JavaScript-->
-		<script type="text/javascript" src="script.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
