@@ -194,8 +194,9 @@ img{
 }
 .contentContact h1{
 	color: #FFF500;
+	-webkit-text-stroke: 1px black;
 	text-align: center;
-	text-decoration: underline;
+	text-decoration: none;
 }
 .contactForm h2{
 	color: #FFF500;
@@ -203,19 +204,27 @@ img{
 	margin-top: 10%;
 }
 .contactForm p{
-	color: #FFF500;
+	color: #fff;
 	text-align: center;
 }
 form{
-	width: 90%;
+	width: 650px;
 	margin-left: 15px;
 }
 .form-group label{
 	background-color: rgba(0,0,0,0.4);
 }
+input[type=text] {
+	background-color: #dddddd;
+}
+input[type=email]{
+	background-color: #dddddd;
+}
+.form-control{
+	background-color: #dddddd;
+}
 label{
 	 font-weight: bold;
-	 font-variant: small-caps;
 	 color: #FFF500;
 }
 .btn{
@@ -234,7 +243,9 @@ label{
 	margin-top: 10%;
 	text-align: center;
 }
-
+.map p{
+	color: #fff;
+}
 .map iframe{
 	width: 90%;
 	height: 300px;
