@@ -11,6 +11,7 @@ body{
 	margin-right: auto;
 }
 
+
 .container{
 	width: 100%;
 	padding-left: auto;
@@ -30,8 +31,6 @@ header{
 
 /*Nav Editing*/
 
-
-
 .dropdown-menu{
 	background-color: #333;
 }
@@ -39,11 +38,17 @@ header{
 	background-color: #333;
 	color: #FFFFFF;
 }
+.navbar-nav{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*End of Nav Editing*/
 
 
 
 /* Slideshow  */
+
 .slideshow-container {
   max-height: auto;
   width: 450px;
@@ -52,11 +57,13 @@ header{
   margin-top: 2%;
   background-color: grey;
   overflow: clear;
+  border-radius: 30px;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+  border-radius: 30px;
 }
 
 /*Responsive Images*/
@@ -65,9 +72,10 @@ header{
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 30px;
  
 }
-
+   
 /* The dots/bullets/indicators 
 .dot {
   cursor: pointer;
@@ -87,6 +95,21 @@ header{
   background-color: #717171;
 }*/
 
+.oval{
+  height: 150px;
+  width: auto;
+  background-color: #333;
+  border-radius: 50%;
+  margin-top: 15%;
+  float: right;
+}
+.welcome{
+	padding-left: 5%;
+	color: #FFF500;
+}
+.welcome h2{
+	padding-left: 30%;
+}
 
 /*Home Page of Content within header and footer*/
 .contentHome{
@@ -128,6 +151,15 @@ header{
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
+}
+.text-block4 .col-sm-4{
+	float: left;
+}
+#about{
+	margin-left: 3%;
+}
+.text-block4 .siteVideo{
+	float: right;
 }
 
 /*End of Home Page Content within header and footer*/

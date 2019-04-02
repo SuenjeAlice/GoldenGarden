@@ -39,10 +39,10 @@
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-				<!--When active in the nav bar the writing will be in white and the rest in grey-->
+				<ul class="navbar-nav ">
+				<!--When active in the nav bar th.e writing will be in white and the rest in grey-->
 				  <li class="nav-item active">
-					<a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
 				  </li>
 				  <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
@@ -61,8 +61,8 @@
 			  </div>
 			</nav>
 		</header>
-			
-		<!--Slide Show-->
+		<div class="openHome">
+			<!--Slide Show-->
 			<div class="row">
 				<div class="col-sm-5">
 					<div class="slideShow">	
@@ -89,15 +89,18 @@
 						  <span class="dot" onclick="currentSlide(3)"></span> 
 						</div>
 				</div>
-					
-				<div class="col-sm-5">
-					<!--Welcome Message-->
-					<div class="welcome">
-						<h2>Welcome!</h2>
-						<p>To Golden Garden where we strive to provide our customers with the best availabe materials to create the garden of their dreams  </p>
+				
+				<!--Welcome Message-->
+				<div class="col-sm-5" id="welcomeBan">
+					<div class="oval">
+						<div class="welcome">
+							<h2>Welcome!</h2>
+							<p>To Golden Garden where we strive to provide our customers with the best availabe materials to create the garden of their dreams  </p>
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 				<!--Content section-->
 				<div class="contentHome" id="home">
 					<div class="text-block1" id="products">
@@ -112,13 +115,22 @@
 							<p>With our Landscaping products you can beautify every garden, field or land.</p>
 						</div><!--End of landscaping div-->
 					</div><!--End of products div-->
-					<div class="text-block4" id="about">
-						<h2>About Us</h2>
-						<p>Golden Garden is split into Golden Garden Sand and Gravel and Golden Garden Landscaping products. Our company was founded in 2007 and has grown a lot in landscaping products.</p>
-						<p>Our company has been in business since 2007. During the past few years our business has grown in landscaping products.</p>
-						<p>We started by selling our own beech pebble in sizes of 6mm to 20mm and expanded in sourcing stone from all over Ireland, which today gives us one of the most extensive range of products for the Garden & Landscaping business.</p>
-						<p>We supply most of our products in bags from 25kg up to 1ton.</p>
-					</div><!--End of about div-->
+					<div class="row">
+						<div class="text-block4" >
+							<div class="col-sm-4" id="about">
+								<h2>About Us</h2>
+								<p>Golden Garden is split into Golden Garden Sand and Gravel and Golden Garden Landscaping products. Our company was founded in 2007 and has grown a lot in landscaping products.</p>
+								<p>Our company has been in business since 2007. During the past few years our business has grown in landscaping products.</p>
+								<p>We started by selling our own beech pebble in sizes of 6mm to 20mm and expanded in sourcing stone from all over Ireland, which today gives us one of the most extensive range of products for the Garden & Landscaping business.</p>
+								<p>We supply most of our products in bags from 25kg up to 1ton.</p>
+							</div><!--End of about div-->
+							<div class="siteVideo">
+								<div class="col-sm-4" >
+									<video width =  "752px" height = "360px" autoplay muted loop><source src="resources/videos/Golden Garden Video.mp4" type = "video/mp4">Your browser does not support the video tag.</video>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div><!--End of content div-->
 
 			<!--Footer contains: -Logo linked to Home Page, address and social media links-->
