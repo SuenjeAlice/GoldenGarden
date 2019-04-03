@@ -21,7 +21,6 @@
 		<!-- jQuery first, then Popper.js, then Bootstrap JS-->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="jquery.shop.js"></script>
 		
 		<!--FontAwesome-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -30,6 +29,7 @@
 		
 		<!--Customized Style sheet-->
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="shop.css">
 	
 </head>
 	<body>
@@ -53,11 +53,11 @@
 							<a class="dropdown-item" href="product.html#sandgravel">Sand & Gravel</a>
 						</div>
 				  </li>
-				  <li class="nav-item">
+				  <li class="nav-item active">
 					<a class="nav-link" href="shop.html">Shop</a>
 				  </li>
-				  <li class="nav-item active">
-					<a class="nav-link" href="contact.html">Contact</a>
+				  <li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
 				  </li>
 				</ul>
 			  </div>
@@ -65,59 +65,144 @@
 		</header>
 				<!--Content section-->
 				<div class="content">
-					<div id="products">
-					<ul>
-						<li>
-							<div class="product-image">
-								<img src="resources/images/Alpine_White.jpg" alt="" />
+				
+					<!--Inspired by WebDevSimplified-->
+				
+					<section class="container content-section">
+					<h2 class="section-header">LANDSCAPING</h2>
+					
+					<div class = "shop-items">
+					
+						<div class = "shop-item">
+							<span class = "shop-item-title">Donegal Quartz</span>
+							<img class = "shop-item-image" src = "resources/images/Donegal_Quartz.jpg" alt = "Donegal Quartz">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
 							</div>
-							<div class="product-description" data-name="Wine #1" data-price="5">
-								<h3 class="product-name">Wine #1</h3>
-								<p class="product-price">&euro; 5</p>
-								<form class="add-to-cart" action="cart.html" method="get">
-									<div>
-										<label for="qty-1">Quantity</label>
-										<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-									</div>
-									<p><input type="submit" value="Add to cart" class="btn" /></p>
-								</form>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">10mm Beech Pebble</span>
+							<img class = "shop-item-image" src = "resources/images/10mm_Beech_Pebble.jpg" alt = "10mm Beech Pebble">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
 							</div>
-						</li>
-						<li>
-							<div class="product-image">
-								<img src="resources/images/Alpine_White.jpg" alt="" />
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">20mm Beech Pebble</span>
+							<img class = "shop-item-image" src = "resources/images/20mm_Beech_Pebble.jpg" alt = "20mm Beech Pebble">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
 							</div>
-							<div class="product-description" data-name="Wine #2" data-price="8">
-								<h3 class="product-name">Wine #2</h3>
-								<p class="product-price">&euro; 8</p>
-								<form class="add-to-cart" action="cart.html" method="get">
-									<div>
-										<label for="qty-2">Quantity</label>
-										<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-									</div>
-									<p><input type="submit" value="Add to cart" class="btn" /></p>
-								</form>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">Charcoal Grey</span>
+							<img class = "shop-item-image" src = "resources/images/Charcoal_Grey.jpg" alt = "Charcoal Grey">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
 							</div>
-						</li>
-
-						<li>
-							<div class="product-image">
-								<img src="resources/images/Alpine_White.jpg" alt="" />
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">Pale Brown</span>
+							<img class = "shop-item-image" src = "resources/images/Pale_Brown.jpg" alt = "Pale Brown">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
 							</div>
-							<div class="product-description" data-name="Wine #3" data-price="11">
-								<h3 class="product-name">Wine #3</h3>
-								<p class="product-price">&euro; 11</p>
-								<form class="add-to-cart" action="cart.html" method="get">
-									<div>
-										<label for="qty-3">Quantity</label>
-										<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
-									</div>
-									<p><input type="submit" value="Add to cart" class="btn" /></p>
-								</form>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">Crushed Plum Slate</span>
+							<img class = "shop-item-image" src = "resources/images/Crushed_Plum_Slate.jpg" alt = "Crushed Plum Slate">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
 							</div>
-						</li>
-					</ul>
-				</div>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">Leitrim Gold</span>
+							<img class = "shop-item-image" src = "resources/images/Leitrim_Gold.jpg" alt = "Leitrim Gold">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
+							</div>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">Cranford Gold</span>
+							<img class = "shop-item-image" src = "resources/images/Cranford_Gold.jpg" alt = "Cranford Gold">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
+							</div>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">Alpine White</span>
+							<img class = "shop-item-image" src = "resources/images/Alpine_White.jpg" alt = "Alpine White">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
+							</div>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">Small Water Features</span>
+							<img class = "shop-item-image" src = "resources/images/Small_Water_Feature_Boulders.jpg" alt = "Small Water Features">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
+							</div>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">Large Boulders</span>
+							<img class = "shop-item-image" src = "resources/images/Large_Boulders.JPG" alt = "Large Boulders">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
+							</div>
+						</div>
+						
+						<div class = "shop-item">
+							<span class = "shop-item-title">5mm Beech Pebble</span>
+							<img class = "shop-item-image" src = "resources/images/5mm_Beech_Pebble.JPG" alt = "5mm Beech Pebble">
+							<div class = "shop-item-details">
+								<span class = "shop-item-price">20€</span>
+								<button class = "btn btn-primary shop-item-button" type = "button">ADD TO CART</button>
+							</div>
+						</div>
+					</section>
+					
+					<section class="container content-section">
+					<h2 class="section-header">CART</h2>
+					
+					<div class="cart-row">
+						<span class="cart-item cart-header cart-column">ITEM</span>
+						<span class="cart-price cart-header cart-column">PRICE</span>
+						<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+					</div>
+					
+					<div class="cart-items">
+					</div>
+					
+					<div class="cart-total">
+						<strong class="cart-total-title">Total</strong>
+						<span class="cart-total-price">€0</span>
+					</div>
+					<button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+					</section>
+												
+						
+					</div>
 
 				</div>
 			<!--Footer contains: -Logo linked to Home Page, address and social media links-->
@@ -166,5 +251,7 @@
 				</div>
 			</footer>
 		</div>
+		
+		<script type="text/javascript" src="shop.js"></script>
 	</body>
 </html>
