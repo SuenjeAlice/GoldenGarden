@@ -4,8 +4,18 @@
 	Created By: Jennifer Ryan, Deirbhle Touhy and Sunje Alice Winteler.
 	Created On: 04/02/2019
 */
-//JavaScript code for the slideshow
 
+//On page load logo
+var pageLogo;
+function loadLogo(){
+	pageLogo = setTimeout(showPage, 2500);
+}
+function showPage(){
+	document.getElementById("preloader").style.display = "none";
+	document.getElementById("webContent").style.display = "block";
+}
+
+//JavaScript code for the slideshow
 var slideIndex = 0;
 showSlides();
 

@@ -41,6 +41,13 @@ body{
     left: 20%;
 }
 
+@media screen and (max-width: 786px) {
+	.loader{
+		display: none;
+	}
+}
+/*End of Website with Logo*/
+
 header{
 	width: 100%;
 	height: auto;
@@ -104,24 +111,6 @@ header{
  
 }
    
-/* The dots/bullets/indicators 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-#dot{							
-	text-align: auto;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}*/
 
 .oval{
 	margin-top: 15%;
@@ -151,6 +140,9 @@ header{
 .contentHome p{
 	color: white;
 }
+.row{
+	margin-right: 0px;
+}
 .text-block1  h2{
 	color: #FFF500;
 }
@@ -173,6 +165,7 @@ header{
   width: 100%;
   padding: 20px;
 }
+
 .text-block4{
   position: relative;
   bottom: 0;
@@ -404,43 +397,41 @@ footer h5{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 90%;
+		width: 100%;
 		
 	}
-	.openHome .welcome{
-		position: relative;
-		display: block;
+	.openHome #welcomeBan{
+		padding-left: auto;
+		padding-right: 5px;
 		width: 100%;
-		padding-bottom: 10%;
+		padding-bottom: 5%;
 		
+	}
+	.text-block4 .col-sm-4{
+		max-width: 100%;
 	}
 	.siteVideo video{
-		position: relative;
-		display: block;
 		width: 100%;
 		height: auto;
 	}
 }
 /*Home Page Media Queries tablet*/
 @media screen and (max-width: 786px){
+	.slideShow{
+		padding-left: 3%;
+	}
+
 	.openHome .slideshow-container{
 		position: relative;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
-		
 	}
-	.openHome .oval{
-				
-		
-		
+	.text-block4 .col-sm-4{
+		max-width: 100%;
 	}
-	.siteVideo video{
-		float: right;
-		width: 75%;
-		height: auto;
-	}
+	
 }
 
 	
