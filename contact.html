@@ -73,13 +73,13 @@
 						<h1>Contact Us</h1>
 					<div class="row">
 						<div class="col-sm">
-							<div class="contactForm" action="contact.php" method="POST">
+							<div class="contactForm" >
 								<h2>Contact Form</h2>
-								<p>Please Leave your name, email and query and we will respond A.S.A.P</p>
-								<form>
+								<p>Please <strong>DO NOT</strong> leave your name, email and query and we will respond A.S.A.P</p>
+								<form id = "contact-form" name = "contact-form" action="contact.php" method="POST">
 									<div class="form-group">
-										<label for="usr">Name:</label>
-										<input type="text" class="form-control" id="usr">
+										<label for="name">Name:</label>
+										<input type="text" class="form-control" id="name">
 									</div>
 									<div class="form-group">
 										<label for="email">Email address:</label>
@@ -91,7 +91,7 @@
 									</div>
 									<div class="form-group"> 
 										<div class="col-sm-offset-2 col-sm-10">
-											<button type="submit" class="btn btn-default" onclick="validateForm()">Submit</button>
+											<button type="submit" class="btn btn-primary" onclick="validateForm()">Submit</button>
 										</div>
 									</div>
 								</form>

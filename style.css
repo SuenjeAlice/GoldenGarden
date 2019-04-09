@@ -262,8 +262,12 @@ img{
 	color: #fff;
 	text-align: center;
 }
+.contactForm strong{
+	color: red;
+}
+
 form{
-	width: 650px;
+	width: 90%;
 	margin-left: 15px;
 }
 .form-group label{
@@ -455,6 +459,24 @@ footer h5{
 		width: 100%;
 	}
 }
+
+/*Contact Content Tablets*/
+
+@media screen and (max-width: 1024px){
+	.contentContact h1{
+		display: none;
+	}
+	
+	.contentContact h2{
+		margin-top: 0;
+	}
+	
+	.map{
+		margin-top: 0;
+	}
+	
+}
+
 /*Footer*/
 
 @media screen and (max-width: 600px) {
