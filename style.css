@@ -310,16 +310,6 @@ label{
 	height: 300px;
 }
 
-/*About page styling*/
-.contentAbout{
-	
-	background-image: url("resources/images/Alpine_White.jpg");
-	background-size: 100%;
-	text-align: left;
-}
-.contentAbout{
-	color: #FFF500;
-}
 /*End of Contact Page Styling*/
 
 /*Footer Styling*/
@@ -463,16 +453,8 @@ footer h5{
 /*Contact Content Tablets*/
 
 @media screen and (max-width: 1024px){
-	.contentContact h1{
-		display: none;
-	}
-	
-	.contentContact h2{
-		margin-top: 0;
-	}
-	
-	.map{
-		margin-top: 0;
+	.contentContact{
+		overflow: auto;
 	}
 	
 }
