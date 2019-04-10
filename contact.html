@@ -76,22 +76,22 @@
 							<div class="contactForm" >
 								<h2>Contact Form</h2>
 								<p>Please <strong>DO NOT</strong> leave your name, email and query and we will respond A.S.A.P</p>
-								<form id = "contact-form" name = "contact-form" action="contact.php" method="POST">
+								<form id = "contact-form" name = "contact-form" action="https://formspree.io/gmit.winteler@gmail.com" method="POST">
 									<div class="form-group">
 										<label for="name">Name:</label>
-										<input type="text" class="form-control" id="name">
+										<input type="text" class="form-control" id="name" name = "name" >
 									</div>
 									<div class="form-group">
 										<label for="email">Email address:</label>
-										<input type="email" class="form-control" id="email">
+										<input type="email" class="form-control" id="email" name = "email">
 									</div>
 									<div class="form-group">
 										<label for="comment">Comment:</label>
-										<textarea class="form-control" rows="4" id="comment"></textarea>
+										<textarea class="form-control" rows="4" id="comment" name = "comment"></textarea>
 									</div>
 									<div class="form-group"> 
 										<div class="col-sm-offset-2 col-sm-10">
-											<button type="submit" class="btn btn-primary" onclick="validateForm()">Submit</button>
+											<button type="submit" class="btn btn-primary">Submit</button>
 										</div>
 									</div>
 								</form>
