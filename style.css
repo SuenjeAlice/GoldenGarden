@@ -428,6 +428,32 @@ footer h5{
 		height: auto;
 	}
 }
+
+/*Home Page Media Queries Small Tablet*/
+@media screen and (max-width: 1250px){
+	.openHome .slideshow-container{
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		
+	}
+	.openHome #welcomeBan{
+		padding-left: auto;
+		padding-right: 5px;
+		width: 100%;
+		padding-bottom: 5%;
+		
+	}
+	.text-block4 .col-sm-4{
+		max-width: 100%;
+	}
+	.siteVideo video{
+		width: 100%;
+		height: auto;
+	}
+}
 /*Home Page Media Queries tablet*/
 @media screen and (max-width: 786px){
 	.slideShow{
