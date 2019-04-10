@@ -8,7 +8,7 @@
 //On page load logo
 var pageLogo;
 function loadLogo(){
-	pageLogo = setTimeout(showPage, 2500);
+	pageLogo = setTimeout(showPage, 2000);
 }
 function showPage(){
 	document.getElementById("preloader").style.display = "none";
