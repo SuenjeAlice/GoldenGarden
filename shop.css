@@ -1,4 +1,11 @@
-/*Shop*/
+/*
+	Name: Golden Garden - Shop Style Page
+	Description: CSS style sheet for the golden garden shop.
+	Created By: Jennifer Ryan, Deirbhle Touhy and Sunje Alice Winteler.
+	Created On: 12/03/2019
+*/
+
+/*Style for Shop*/
 
 /*Followed Tutorial by WebDevSimplified*/
 
@@ -20,6 +27,8 @@
 	text-align: center;
 	font-size: 2.5em;
 }
+
+/*Style for shop sections*/
 
 .shop-item{
 	padding: 5px;
@@ -58,6 +67,8 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
+
+/*Style for cart*/
 
 #cart-section{
 	padding-bottom: 15px;

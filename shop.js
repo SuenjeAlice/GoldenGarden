@@ -1,3 +1,12 @@
+/*
+	Name: Golden Garden
+	Description: JavaScript sheet for the golden garden shop.
+	Created By: Jennifer Ryan, Deirbhle Touhy and Sunje Alice Winteler.
+	Created On: 12/03/2019
+*/
+
+/*JavaScript for Shop*/
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -26,6 +35,8 @@ function ready() {
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
+/*Function for pressing the purchase button*/
+
 function purchaseClicked() {
     alert('Thank you for your purchase, hope to see you next time!')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -35,11 +46,15 @@ function purchaseClicked() {
     updateCartTotal()
 }
 
+/*function to remove an item from the cart*/
+
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
 }
+
+/*function to change quantity of cart items*/
 
 function quantityChanged(event) {
     var input = event.target
@@ -48,6 +63,8 @@ function quantityChanged(event) {
     }
     updateCartTotal()
 }
+
+/*functions to add items to the cart (when button is pressed)*/
 
 function addToCartClicked(event) {
     var button = event.target
@@ -85,6 +102,8 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
+
+/*function to calculate the price total*/
 
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
